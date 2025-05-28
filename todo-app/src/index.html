@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stylish To-Do App</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📝 My To-Do Lists</h1>
+    <div class="lists-section">
+      <input id="new-list-input" type="text" placeholder="New List Name" />
+      <button id="add-list-btn">Add List</button>
+      <ul id="lists"></ul>
+    </div>
+    <div class="tasks-section" id="tasks-section" style="display:none;">
+      <h2 id="current-list-title"></h2>
+      <form id="add-task-form">
+        <input id="task-input" type="text" placeholder="Add a new task..." required />
+        <input id="task-date" type="date" required />
+        <input id="task-time" type="time" required />
+        <button type="submit">Add Task</button>
+      </form>
+      <ul id="tasks"></ul>
+      <button id="back-to-lists">Back to Lists</button>
+    </div>
+  </div>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
